@@ -1,12 +1,14 @@
 <?php
 
+use App\DesignPatterns\Strategy\Models\Airplaine;
+use App\DesignPatterns\Strategy\Models\Bus;
+use App\DesignPatterns\Strategy\Models\Car;
+use App\DesignPatterns\Strategy\Services\TransportadorService;
+
 require_once 'vendor/autoload.php';
 
-use App\DesignPatterns\Strategy\Models\BancoBrasil;
-use App\DesignPatterns\Strategy\Models\Itau;
-use App\DesignPatterns\Strategy\Models\Santander;
-use App\DesignPatterns\Strategy\Services\CalculadoraJurosService;
+
 
 // testando banco do brasil
- $calculadora = new CalculadoraJurosService(new BancoBrasil, 100);
- echo $calculadora->calcular();
+ $transportado = new TransportadorService(new Bus);
+ echo $transportado->transportar();
