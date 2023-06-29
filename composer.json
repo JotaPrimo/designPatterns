@@ -1,0 +1,18 @@
+{
+    "name": "jailson_primo/design-patterns",
+    "autoload": {
+        "psr-4": {
+            "App\\DesignPatterns\\": "src/",
+            "App\\DesignPatterns\\Strategy\\Models\\": "src/Strategy/Models/",
+            "App\\DesignPatterns\\Strategy\\Interfaces\\": "src/Strategy/Interfaces/",
+            "App\\DesignPatterns\\Strategy\\Services\\": "src/Strategy/Services/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JotaPrimo",
+            "email": "gestald118@gmail.com"
+        }
+    ],
+    "require": {}
+}
